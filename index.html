@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETRA Robot Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header portion of the page-->
+    <header class="top-header">
+        <div class="banner">
+            <!-- Logo-->
+            <div class="logo">
+                N
+            </div>
+            <div>
+                <h1> NETRA </h1>
+                <p>ROBOT MiSSION CONTROL</p>
+            </div>
+        </div>
+
+        <!-- Navigation bar-->
+        <nav class="navbar">
+            <a href="#">Dashboard</a>
+            <a href="#">Telemetry</a>
+            <a href="#">Fleet</a>
+            <a href="#">Alerts</a>
+        </nav>
+
+        <!-- System time-->
+        <div class="system-time">
+            <span class="online-dot"></span> 
+            <span>SYSTEM ONLINE</span> 
+            <strong id="clock">--:--:--</strong>
+        </div>
+
+        <div class="Dispatch-button">
+            <button>+DISPATCH MISSION</button>
+        </div>
+    </header>
+
+    <!-- ================= MAIN DASHBOARD ================= --> 
+     <main class="page"> 
+        <!-- ================= KPI CARDS ================= --> <!-- Displays important fleet statistics --> 
+         <section class="kpi-grid"> 
+            <article class="kpi-card"> 
+                <span>ROVERS ONLINE</span> 
+                <h2 id="online-count">6 / 6</h2> 
+                <p>Active rover units</p> 
+            </article> 
+            <article class="kpi-card"> 
+                <span>AVERAGE BATTERY</span>
+                <h2 id="average-battery">76%</h2> 
+                <p>Fleet battery level</p> 
+            </article> 
+            <article class="kpi-card"> 
+                <span>OPEN ALERTS</span> 
+                <h2 id="alert-count">0</h2> 
+                <p>Requires attention</p> 
+            </article> 
+            <article class="kpi-card"> 
+                <span>DISTANCE TODAY</span> 
+                <h2 id="distance">13.6 km</h2> 
+                <p>Total simulated distance</p> 
+            </article> 
+        </section>
+        <!-- more sections are added here in later parts --> 
+    </main>
+    
+    <script src="script.js">  </script>
+</body>
+</html>
